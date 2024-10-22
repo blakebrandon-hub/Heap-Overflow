@@ -1,0 +1,50 @@
+{% extends 'heap/base.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="question">
+        <h2>{{ question.title }}</h2>
+        <p class="question-body">{{ question.body }}</p>
+        <p class="question-meta">Asked by {{ question.author }} on {{ question.created_at }}</p>
+        <div class="question-tags">
+            {% for tag in question.tags.all %}
+                <a href="{% url 'questions_by_tag' tag_id=tag.id %}"><span class="tag">{{ tag.name }}</span></a>
+            {% endfor %}
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="answers">
+        <h3>Answers</h3>
+        {% if answers.exists %}
+            {% for answer in answers %}
+                <div class="answer">
+                    <p class="answer-body">{{ answer.body }}</p>
+                    <p class="answer-meta">Answered by {{ answer.author }} on {{ answer.created_at }}</p>
+                    <hr>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>No answers yet. Be the first to answer this question!</p>
+        {% endif %}
+    </div>
+
+    <hr>
+
+    <!-- Answer form (optional) -->
+    {% if user.is_authenticated %}
+    <div class="answer-form">
+        <h4>Your Answer</h4>
+        <form method="post" action="{% url 'answer_question' pk=question.pk %}">
+    {% csrf_token %}
+    <textarea name="body" rows="4" class="form-control" placeholder="Type your answer here..."></textarea>
+    <button type="submit" class="btn btn-primary mt-2">Submit Answer</button>
+</form>
+        
+    </div>
+    {% else %}
+    <p>You must be <a href="{% url 'login' %}">logged in</a> to submit an answer.</p>
+    {% endif %}
+</div>
+{% endblock %}

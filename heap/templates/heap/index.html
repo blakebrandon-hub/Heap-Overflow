@@ -1,0 +1,47 @@
+{% extends 'heap/base.html' %}
+
+{% block content %}
+
+    <h1>All Questions</h1>
+    {% if user.is_authenticated %}
+        <a href="{% url 'ask_question' %}" style="text-decoration: none;"><h6>Ask a new question</h6></a>
+    {% endif %}
+    <div class="questions-list">
+        {% for question in questions %}
+            <div class="question-item">
+                <h2 class="question-title">
+                    <a href="{% url 'question_detail' question.id %}">{{ question.title }}</a>
+                </h2>
+                <p class="question-meta">Asked by <a href="#">{{ question.author }}</a> | {{ question.created_at }}</p>
+                <p class="question-excerpt">{{ question.body }}</p>
+                <div class="question-tags">
+                    {% for tag in question.tags.all %}
+                        <a href="{% url 'questions_by_tag' tag_id=tag.id %}"><span class="tag">{{ tag.name }}</span></a>
+                    {% endfor %}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+{% endblock %}
+
+                <!--<div class="question-item">
+                    <h2 class="question-title"><a href="#">What are some best practices for writing Pythonic code?</a></h2>
+                    <p class="question-meta">Asked by <a href="#">python_guy</a> | 10 minutes ago | 3 Answers </p>
+                    <p class="question-excerpt">I sent a project to a colleague and he said my code wasn't very readable or well documented...</p>
+                    <div class="question-tags">
+                        <span class="tag">Python</span>
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <h2 class="question-title"><a href="#">How do I configure environment variables in AWS Elastic Beanstalk?</a></h2>
+                    <p class="question-meta">Asked by <a href="#">solvewithus</a> | 28 minutes ago | 2 Answers </p>
+                    <p class="question-excerpt">I need to hide my secret keys. How do I configure environment variables in Elastik Beanstalk...</p>
+                    <div class="question-tags">
+                        <span class="tag">AWS</span>
+                        <span class="tag">Elastic Beanstalk</span>
+                    </div>
+                </div>-->
+
+        

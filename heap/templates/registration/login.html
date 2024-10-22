@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heap Overflow - Q&A Platform</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+</head>
+<body>
+<!-- Responsive navbar-->
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+            <div class="container">
+                <img class="icon "src="{% static 'icon.png' %}" style="width: 2rem;">
+                <a class="navbar-brand" href="{% url 'index' %}"> Heap <b>Overflow</b></a>
+                
+          
+            </div>
+        </nav>
+
+
+
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+
+            {% block content %}
+              <h2>Login</h2>
+              <form method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit">Login</button>
+              </form>
+            {% endblock %}
+
+            <br>
+
+        </div>
+
+        <br>
+    </main>
+<br>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Heap Overflow. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
