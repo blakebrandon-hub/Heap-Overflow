@@ -14,5 +14,5 @@ urlpatterns = [
     path('register/', views.register, name='register'),
     path('login/', auth_views.LoginView.as_view(), name='login'),
     path('logout/', views.custom_logout, name='custom_logout'),
-    path('post/<int:question_id>/delete/', views.delete_question, name='delete_post'),
+    path('question/<int:question_id>/delete/', views.delete_question, name='delete_question'),
 ]
