@@ -22,8 +22,6 @@
     </form>
     {% endif %}
 
-    <hr>
-
     <div class="answers">
         <h3>Answers</h3>
         {% if answers.exists %}
@@ -31,7 +29,6 @@
                 <div class="answer">
                     <p class="answer-body">{{ answer.body }}</p>
                     <p class="answer-meta">Answered by {{ answer.author }} on {{ answer.created_at }}</p>
-                    <hr>
                 </div>
             {% endfor %}
         {% else %}
