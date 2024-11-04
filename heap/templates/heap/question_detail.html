@@ -14,7 +14,7 @@
     </div>
 
     {% if request.user == question.author %}
-        <form action="{% url 'delete_post' question.id %}" method="post" style="display:inline;">
+        <form action="{% url 'delete_question' question.id %}" method="post" style="display:inline;">
         {% csrf_token %}
         <button type="submit" class="btn btn-danger">Delete</button>
     </form>
