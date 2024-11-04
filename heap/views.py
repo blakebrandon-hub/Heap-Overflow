@@ -91,3 +91,12 @@ def custom_logout(request):
         return redirect('/')
     else:
         return HttpResponseNotAllowed(['POST'])
+
+@login_required
+def delete_question(request, question_id):
+    if request.method == 'POST':
+        question = get_object_or_404(Question, id=question_id)
+        if question.author == request.user:
+            question.delete()
+            return redirect('home')  # Redirect to the desired page after deletion
+    return redirect('question_detail', question_id=question.id)  # Redirect if unauthorized
