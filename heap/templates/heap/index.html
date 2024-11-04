@@ -10,7 +10,7 @@
         {% for question in questions %}
             <div class="question-item">
                 <h2 class="question-title">
-                    <a href="{% url 'question_detail' question.id %}">{{ question.question_title }}</a>
+                    <a href="{% url 'question_detail' question.id %}">{{ question.title }}</a>
                 </h2>
                 <p class="question-meta">Asked by <a href="#">{{ question.author }}</a> | {{ question.created_at }}</p>
                 <p class="question-excerpt">{{ question.body }}</p>
