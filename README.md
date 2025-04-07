@@ -2,8 +2,6 @@
 
 **Heap Overflow** is a parody of Stack Overflow, designed as a Q&A website where developers can authenticate to share knowledge, ask questions, and follow topics of interest. This project was built to demonstrate expertise in web development, particularly with Django and Python.
 
----
-
 ## ✨ Features
 
 - **User Authentication** — Secure signup, login, and logout functionality.
@@ -11,8 +9,6 @@
 - **Topic Following** — Users can follow specific topics and technologies.
 - **Search & Filter** — Easily find questions or browse by topic.
 - **Responsive UI** — Clean, mobile-friendly design with Bootstrap.
-
----
 
 ## 🛠️ Tech Stack
 
@@ -30,8 +26,6 @@
 
 **Deployment:**
 - Heroku
-
----
 
 ## 🧪 Local Installation
 
@@ -75,8 +69,6 @@ To set up Heap Overflow locally, follow these steps:
 6. **Access the Application**:
    Open your browser and navigate to `http://127.0.0.1:8000/`.
 
----
-
 ## Deployment
 
 Heap Overflow is hosted on Heroku. To deploy your own instance:
@@ -97,10 +89,7 @@ Heap Overflow is hosted on Heroku. To deploy your own instance:
 
 4. **Configure Environment Variables**:
    Set the necessary variables such as `SECRET_KEY`, `DEBUG`, and database credentials using the Heroku dashboard or CLI.
-
-
-
-
+   
 ## Contact
 
 - **Author**: Blake Brandon
