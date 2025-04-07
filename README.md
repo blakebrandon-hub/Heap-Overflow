@@ -1,6 +1,6 @@
 # Heap Overflow
 
-Heap Overflow is a parody of Stack Overflow, designed as a Q&A website for developers to share knowledge, ask questions, and follow topics of interest. This project was built to demonstrate expertise in web development, particularly with Django and Python, while incorporating authentication and topic-specific features.
+Heap Overflow is a parody of Stack Overflow, designed as a Q&A website where developers can authenticate to share knowledge, ask questions, and follow topics of interest. This project was built to demonstrate expertise in web development, particularly with Django and Python.
 
 ---
 
