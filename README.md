@@ -89,6 +89,10 @@ Heap Overflow is hosted on Heroku. To deploy your own instance:
 
 4. **Configure Environment Variables**:
    Set the necessary variables such as `SECRET_KEY`, `DEBUG`, and database credentials using the Heroku dashboard or CLI.
+
+## 📜 License
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT). See the `LICENSE` file for details.
    
 ## Contact
 
