@@ -91,31 +91,8 @@ Heap Overflow is hosted on Heroku. To deploy your own instance:
 4. **Configure Environment Variables**:
    Set the necessary variables such as `SECRET_KEY`, `DEBUG`, and database credentials using the Heroku dashboard or CLI.
 
----
 
-## Contributing
 
-We welcome contributions! To contribute:
-
-1. Fork the repository.
-2. Create a new branch for your feature or bugfix.
-3. Commit your changes and push them to your fork.
-4. Submit a pull request with a clear description of your changes.
-
----
-
-## License
-
-Heap Overflow is open-source and available under the [MIT License](LICENSE).
-
----
-
-## Acknowledgements
-
-- **Django Documentation**: [https://docs.djangoproject.com/](https://docs.djangoproject.com/)
-- **Bootstrap**: [https://getbootstrap.com/](https://getbootstrap.com/)
-
----
 
 ## Contact
 
