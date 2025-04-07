@@ -1,38 +1,45 @@
-# Heap Overflow
+# 💬 Heap Overflow
 
-Heap Overflow is a parody of Stack Overflow, designed as a Q&A website where developers can authenticate to share knowledge, ask questions, and follow topics of interest. This project was built to demonstrate expertise in web development, particularly with Django and Python.
-
----
-
-## Features
-
-- **User Authentication**: Users must sign up or log in to interact with the platform, ensuring a secure and personalized experience.
-- **Ask Questions**: Authenticated users can post questions to seek help from the community.
-- **Answer Questions**: Users can provide answers to posted questions, fostering collaboration and knowledge-sharing.
-- **Follow Topics**: Follow specific programming topics or technologies to stay updated.
-- **Search Functionality**: Easily search for questions and answers.
-- **Topic Filtering**: Browse questions by specific topics.
+**Heap Overflow** is a parody of Stack Overflow, designed as a Q&A website where developers can authenticate to share knowledge, ask questions, and follow topics of interest. This project was built to demonstrate expertise in web development, particularly with Django and Python.
 
 ---
 
-## Technology Stack
+## ✨ Features
 
-- **Frontend**:
-  - HTML, CSS
-  - Bootstrap (responsive design)
-
-- **Backend**:
-  - Python
-  - Django (MVC framework)
-
-- **Database**:
-  - SQLite (development)
-  - Postgres (production)
-
-- **Hosting**:
-  - Heroku
+- **User Authentication** — Secure signup, login, and logout functionality.
+- **Ask & Answer Questions** — Authenticated users can post and respond to programming questions.
+- **Topic Following** — Users can follow specific topics and technologies.
+- **Search & Filter** — Easily find questions or browse by topic.
+- **Responsive UI** — Clean, mobile-friendly design with Bootstrap.
 
 ---
+
+## 🛠️ Tech Stack
+
+**Frontend:**
+- HTML, CSS
+- Bootstrap
+
+**Backend:**
+- Python
+- Django
+
+**Database:**
+- SQLite (development)
+- PostgreSQL (production)
+
+**Deployment:**
+- Heroku
+
+---
+
+## 🧪 Local Installation
+
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/blakebrandon-hub/heap-overflow.git
+   cd heap-overflow
+
 
 ## Installation
 
