@@ -10,6 +10,10 @@
 - **Search & Filter** — Easily find questions or browse by topic.
 - **Responsive UI** — Clean, mobile-friendly design with Bootstrap.
 
+## 🚀 Live Demo
+
+💬 Check out: [Heap Overflow](https://heap-overflow-69e655de3bd5.herokuapp.com)
+
 ## 🛠️ Tech Stack
 
 **Frontend:**
