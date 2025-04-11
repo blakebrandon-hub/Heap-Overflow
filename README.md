@@ -12,7 +12,7 @@
 
 ## 🚀 Live Demo
 
-💬 Check out: [Heap Overflow](https://heap-overflow-69e655de3bd5.herokuapp.com)
+💬 Check out a live demo of [Heap Overflow](https://heap-overflow-a923010546c2.herokuapp.com/).
 
 ## 🛠️ Tech Stack
 
