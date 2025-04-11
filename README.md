@@ -2,6 +2,8 @@
 
 **Heap Overflow** is a parody of Stack Overflow, designed as a Q&A website where developers can authenticate to share knowledge, ask questions, and follow topics of interest. This project was built to demonstrate expertise in web development, particularly with Django and Python.
 
+![heap](https://github.com/user-attachments/assets/7927df95-641e-4888-946a-24a72b101f80)
+
 ## ✨ Features
 
 - **User Authentication** — Secure signup, login, and logout functionality.
