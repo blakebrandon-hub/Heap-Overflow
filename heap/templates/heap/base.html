@@ -29,7 +29,7 @@
                         <!--<li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Users</a></li>-->
                        
                         {% if user.is_authenticated %}
-                            <form method="post" action="{% url 'custom_logout' %}" style="margin-top: 1.2%;">
+                            <form method="post" action="{% url 'custom_logout' %}" style="margin-top: 2%;">
                                 {% csrf_token %}
                                 <button type="submit" style="background: none; color: inherit; border: none; margin: 0; display: inline; padding: 0;">Logout</button>
                             </form>
