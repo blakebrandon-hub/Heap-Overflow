@@ -98,5 +98,5 @@ def delete_question(request, question_id):
         question = get_object_or_404(Question, id=question_id)
         if question.author == request.user:
             question.delete()
-            return redirect('home')  # Redirect to the desired page after deletion
+            return redirect('index')  # Redirect to the desired page after deletion
     return redirect('question_detail', question_id=question.id)  # Redirect if unauthorized
