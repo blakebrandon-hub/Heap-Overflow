@@ -100,3 +100,20 @@ def delete_question(request, question_id):
             question.delete()
             return redirect('index')  # Redirect to the desired page after deletion
     return redirect('question_detail', question_id=question.id)  # Redirect if unauthorized
+
+@login_required
+def edit_question(request, question_id):
+    question = get_object_or_404(Question, id=question_id)
+    if question.author != request.user:
+        return redirect('question_detail', pk=question_id)
+
+    if request.method == 'POST':
+        form = QuestionForm(request.POST, instance=question)
+        if form.is_valid():
+            form.save()
+            return redirect('question_detail', pk=question.id)
+    else:
+        form = QuestionForm(instance=question)
+
+    return render(request, 'heap/edit_question.html', {'form': form, 'question': question})
+
